@@ -21,4 +21,7 @@ Install dependencies
 Run the project
 * `npm start`
 
+To run the application in docker. Run
+* `docker-compose up -d`
+
 DONE!

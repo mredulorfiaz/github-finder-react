@@ -1,0 +1,17 @@
+services:
+  app:
+    container_name: github-finder
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        REACT_APP_GITHUB_CLIENT_ID: b4d16033a1e1fe28edb7
+        REACT_APP_GITHUB_CLIENT_SECRET: a6743ae456106da9ea50538492935cc7ad98489e
+    ports:
+      - 127.0.0.1:8080:80
+    networks:
+      - localdev
+
+networks:
+  localdev:
+    driver: bridge
